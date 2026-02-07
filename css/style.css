@@ -777,48 +777,4 @@ body {
   padding: 0 16px;
 }
 
-.hero-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-/* BIG HERO IMAGE – RESPONSIVE */
-.hero-image {
-  position: absolute;
-  bottom: 0;
-  left: 5vw;                 /* 🔥 relative instead of px */
-  z-index: 2;
-  display: flex;
-  align-items: flex-end;
-}
-
-/* IMAGE AUTO-SCALE */
-.hero-image img {
-  width: 30vw;               /* 🔥 responsive width */
-  max-width: 420px;          /* laptop cap */
-  min-width: 220px;          /* mobile safety */
-  height: auto;
-  animation: floatImg 4s ease-in-out infinite;
-}
-
-@media (max-width: 768px) {
-
-  .hero {
-    height: auto;
-    padding-bottom: 220px;   /* space for image */
-  }
-
-  .hero-image {
-    position: relative;      /* 🔥 stop absolute on mobile */
-    left: 0;
-    margin-top: 30px;
-    justify-content: center;
-  }
-
-  .hero-image img {
-    width: 70vw;             /* 🔥 fits phone width */
-    max-width: 260px;
-  }
-
-}
